@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blog.mapper.BookMapper">
+
+    <insert id="addbook" >
+        insert into tbl_book(type, name, description)
+        values (#{type},#{name},#{description});
+    </insert>
+<!--    <select id="getById" resultType="com.blog.domain.Book">-->
+<!--        select * from tbl_book where id=#{id}-->
+<!--    </select>-->
+<!--    <select id="getAll" resultType="com.blog.domain.Book">-->
+<!--        select * from tbl_book-->
+<!--    </select>-->
+
+</mapper>
